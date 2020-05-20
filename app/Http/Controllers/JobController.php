@@ -26,4 +26,9 @@ class JobController extends Controller
         ]);
         return redirect()->route('job.index');
     }
+
+    // public function show(Jobs $jobs)
+    // {
+    //     return view()
+    // }
 }
