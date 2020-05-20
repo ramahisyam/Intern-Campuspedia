@@ -5,10 +5,10 @@ function difference() {
         minutes = timeOfResponse.split(':')[1] - timeOfCall.split(':')[1];
             
         var a = 0;    
-        if ((timeOfCall < "12:00:00" && timeOfResponse > "12:00:00")){
+        if ((timeOfCall <= "12:00:00" && timeOfResponse >= "13:00:00")){
           a = a + 1;
         }
-        if ((timeOfCall < "15:59:59" && timeOfResponse > "16:59:59")){
+        if ((timeOfCall <= "15:59:59" && timeOfResponse >= "16:59:59")){
           a = a + 1;
         }
         if ((timeOfCall <= "17:59:59" && timeOfResponse >= "18:59:59")){
